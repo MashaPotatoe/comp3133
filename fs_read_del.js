@@ -32,24 +32,3 @@ readStreamCsv
         canadaStream.end();
         usaStream.end();
     });
-
-  
-/*
-// wx is if the file doesnt exist and gives you error
-fs.open('data.txt', 'r+', (err, fd) => {
-    if(err){
-        console.log(err)
-        return
-    }
-
-    var buffer = Buffer.alloc(10)
-    // read call back
-    fs.read(fd, buffer, 0, buffer.length) 
-    console.log(buffer.toString())
-
-    fs.writeSync(fd, Buffer.from('Toronto'), 0, 7, 21)
-    //fs.writeSync()
-
-    fs.closeSync(fd)
-})
-    */
